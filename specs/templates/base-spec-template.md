@@ -8,6 +8,8 @@ Todas las especificaciones (specs) deben seguir estas reglas para garantizar cla
 ## 📂 Organización de directorios
 
 specs/
+├── project-wide/
+│ ├── context.md
 ├── features/
 │ ├── 000-feature/
 │ │ ├── 000-feature-spec.md
@@ -20,6 +22,37 @@ specs/
 │ └── done/
 ├── changelog/
 └── templates/
+
+## 📄 Documentación integral del proyecto
+
+Antes de definir features, user stories o criterios de aceptación, es obligatorio documentar el contexto global del proyecto en el archivo **`project-wide/context.md`**. Este documento debe contener:
+
+1. **Arquitectura del sistema:**
+
+    - Diagrama de componentes principales (puede ser visual o textual)
+    - Tecnologías y frameworks utilizados
+    - Patrones arquitectónicos aplicados
+
+2. **Dependencias:**
+
+    - Listado completo de librerías externas
+    - Versiones requeridas
+    - Dependencias críticas del sistema
+
+3. **Estructura de carpetas:**
+
+    - Layout completo del proyecto
+    - Propósito de cada directorio principal
+    - Convenciones de organización de archivos
+
+4. **Contexto del negocio:**
+    - Objetivos principales del proyecto
+    - Stakeholders clave
+    - Restricciones técnicas relevantes
+
+> El documento `context.md` debe servir como base coherente para la generación de features, user stories y acceptance criteria alineados con la visión global del proyecto.
+
+---
 
 -   **`features/000-feature/`**: Cada feature tiene que tener un **ID numérico único** (`000`, `001`, `002`...), usado en todos los archivos relacionados. Todos aquellos features recientemente creados almacenarlos en `features`.
 
@@ -141,13 +174,12 @@ El changelog debe seguir este **formato estándar**:
 
 ## 🔄 Flujo resumido
 
-1. Crear feature → `features/000-feature/`.
-1. Añadir spec → `features/000-feature/000-feature-spec.md`.
-1. Añadir user stories → `features/000-feature/000-user-story.md`.
-1. Añadir criterios de aceptación → `features/000-feature/000-acceptance-criteria.md`.
-1. Desglosar en tareas → `tasks/000-feature/000-000-[nombre-descriptivo].md`.
-1. Actualizar status en `/status/`.
-1. Documentar cambios en `/changelog/000-feature-log.md`.
-1. Revisar, iterar, mejorar specs de forma continua.
-
----
+1. Generar contexto global del proyecto → documentar visión, objetivos y alcance en `project-wide/context.md`.
+2. Crear feature → `features/000-feature/`.
+3. Añadir spec → `features/000-feature/000-feature-spec.md`.
+4. Añadir user stories → `features/000-feature/000-user-story.md`.
+5. Añadir criterios de aceptación → `features/000-feature/000-acceptance-criteria.md`.
+6. Desglosar en tareas → `tasks/000-feature/000-000-[nombre-descriptivo].md`.
+7. Actualizar status en `/status/`.
+8. Documentar cambios en `/changelog/000-feature-log.md`.
+9. Revisar, iterar, mejorar specs de forma continua.
