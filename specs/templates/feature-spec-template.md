@@ -1,95 +1,207 @@
 # Feature Spec Template
 
-## 📋 Información General
-
-- **ID del Feature**: [XXX] *(Ejemplo: 001)*
-- **Nombre del Feature**: [Nombre descriptivo]
-- **Fecha de creación**: [YYYY-MM-DD]
-- **Autor**: [Nombre del autor]
-- **Estado**: [Pending 📌 / In-progress ⏳ / Done ✅]
+Plantilla para especificaciones de features complejas con **fases de implementación incluidas**. **OBLIGATORIO** completar todos los campos antes de implementar.
 
 ---
 
-## 📝 Descripción Funcional
+## 📋 Información básica
 
-Descripción detallada del feature, explicando claramente qué funcionalidad aporta al sistema y cómo se integra con el resto de componentes.
-
----
-
-## 🎯 Alcance
-
-Definición clara de lo que está incluido y lo que está excluido del feature. Establecer límites precisos para evitar ambigüedades.
-
-**Incluido**:
-- [Elemento incluido 1]
-- [Elemento incluido 2]
-- ...
-
-**Excluido**:
-- [Elemento excluido 1]
-- [Elemento excluido 2]
-- ...
+**ID**: `000`  
+**Nombre**: `[nombre-feature]`  
+**Fecha**: `YYYY-MM-DD`  
+**Autor**: `[nombre]`  
+**Estado**: `⏳ [pending]`
 
 ---
 
-## 🔄 Dependencias
+## 🎯 Objetivo general
 
-Lista de dependencias técnicas, funcionales o de otros features que deben estar completados antes de poder implementar este feature.
-
-- **Dependencia 1**: [Descripción y justificación]
-- **Dependencia 2**: [Descripción y justificación]
-- ...
-
----
-
-## 📚 User Stories Relacionadas
-
-Lista de user stories que componen este feature, con enlaces a sus archivos correspondientes.
-
-- [XXX-001-user-story.md](./XXX-001-user-story.md): [Breve descripción]
-- [XXX-002-user-story.md](./XXX-002-user-story.md): [Breve descripción]
-- ...
+**¿Qué se quiere lograr con esta feature?**
+- Descripción clara y específica del objetivo general
+- Contexto del problema o necesidad que resuelve
+- Valor que aporta al proyecto
 
 ---
 
-## ✅ Criterios de Aceptación
+## 📊 Alcance y limitaciones
 
-Enlaces a los criterios de aceptación definidos para este feature.
-
-- [XXX-acceptance-criteria.md](./XXX-acceptance-criteria.md)
-
----
-
-## 📊 Métricas de Éxito
-
-Indicadores medibles que determinarán si el feature ha sido implementado correctamente y cumple con los objetivos establecidos.
-
-- **Métrica 1**: [Descripción y valor objetivo]
-- **Métrica 2**: [Descripción y valor objetivo]
-- ...
+**¿Qué incluye esta feature?**
+- ✅ Elementos que SÍ se van a implementar
+- ❌ Elementos que NO se van a tocar
+- 🔒 Limitaciones técnicas o de tiempo
 
 ---
 
-## 🔍 Consideraciones Técnicas
+## 🔗 Dependencias
 
-Aspectos técnicos relevantes para la implementación del feature, como arquitectura, patrones de diseño, tecnologías específicas, etc.
+**¿Qué necesita estar listo antes?**
+- [ ] Dependencia 1: Descripción
+- [ ] Dependencia 2: Descripción
+- [ ] Dependencia 3: Descripción
 
-- **Consideración 1**: [Descripción]
-- **Consideración 2**: [Descripción]
-- ...
-
----
-
-## 📝 Notas Adicionales
-
-Cualquier información adicional relevante para el feature que no encaje en las secciones anteriores.
+**¿Qué otras features se ven afectadas?**
+- Feature relacionada 1
+- Feature relacionada 2
 
 ---
 
-## 📂 Referencias
+## 📖 User Stories
 
-Documentos, recursos o fuentes de información relacionadas con este feature.
+*Ver archivo separado: `000-user-story.md`*
 
-- [Referencia 1]: [Descripción y enlace]
-- [Referencia 2]: [Descripción y enlace]
-- ...
+---
+
+## ✅ Acceptance Criteria
+
+*Ver archivo separado: `000-acceptance-criteria.md`*
+
+---
+
+## 🔄 Fases de implementación
+
+**⚠️ IMPORTANTE**: Cada fase se ejecuta secuencialmente con confirmación explícita antes de avanzar a la siguiente.
+
+### **Fase 1: [Nombre de la fase]**
+- **Objetivo**: Descripción específica de esta fase
+- **Archivos afectados**: 
+  - `ruta/archivo1.js`
+  - `ruta/archivo2.js`
+- **Pasos detallados**:
+  1. Paso 1.1: Descripción específica
+  2. Paso 1.2: Descripción específica
+  3. Paso 1.3: Descripción específica
+- **Criterios de éxito**:
+  - [ ] Criterio 1.1: Descripción medible
+  - [ ] Criterio 1.2: Descripción medible
+- **Casos de prueba**:
+  - Caso 1.1: Descripción del escenario
+  - Caso 1.2: Descripción del escenario
+- **Riesgos**: Descripción de posibles problemas
+- **Dependencias de fase**: ¿Qué necesita estar listo?
+
+### **Fase 2: [Nombre de la fase]**
+- **Objetivo**: Descripción específica de esta fase
+- **Archivos afectados**: 
+  - `ruta/archivo3.js`
+  - `ruta/archivo4.js`
+- **Pasos detallados**:
+  1. Paso 2.1: Descripción específica
+  2. Paso 2.2: Descripción específica
+  3. Paso 2.3: Descripción específica
+- **Criterios de éxito**:
+  - [ ] Criterio 2.1: Descripción medible
+  - [ ] Criterio 2.2: Descripción medible
+- **Casos de prueba**:
+  - Caso 2.1: Descripción del escenario
+  - Caso 2.2: Descripción del escenario
+- **Riesgos**: Descripción de posibles problemas
+- **Dependencias de fase**: ¿Qué necesita estar listo?
+
+### **Fase 3: [Nombre de la fase]**
+- **Objetivo**: Descripción específica de esta fase
+- **Archivos afectados**: 
+  - `ruta/archivo5.js`
+  - `ruta/archivo6.js`
+- **Pasos detallados**:
+  1. Paso 3.1: Descripción específica
+  2. Paso 3.2: Descripción específica
+  3. Paso 3.3: Descripción específica
+- **Criterios de éxito**:
+  - [ ] Criterio 3.1: Descripción medible
+  - [ ] Criterio 3.2: Descripción medible
+- **Casos de prueba**:
+  - Caso 3.1: Descripción del escenario
+  - Caso 3.2: Descripción del escenario
+- **Riesgos**: Descripción de posibles problemas
+- **Dependencias de fase**: ¿Qué necesita estar listo?
+
+---
+
+## 🎯 Criterios de éxito generales
+
+**¿Cómo sabemos que la feature está completa?**
+- [ ] Criterio general 1: Descripción medible
+- [ ] Criterio general 2: Descripción medible
+- [ ] Criterio general 3: Descripción medible
+
+---
+
+## ⚠️ Riesgos y consideraciones generales
+
+**¿Qué puede salir mal?**
+- Riesgo 1: Descripción y mitigación
+- Riesgo 2: Descripción y mitigación
+
+**¿Qué considerar durante la implementación?**
+- Consideración 1
+- Consideración 2
+
+---
+
+## 📚 Referencias
+
+**¿Hay documentación relevante?**
+- [Enlace 1](url)
+- [Enlace 2](url)
+
+**¿Hay ejemplos en el código?**
+- `ruta/archivo-ejemplo.js`
+- `ruta/otro-ejemplo.js`
+
+---
+
+## 🔄 Flujo de trabajo por fases
+
+1. **Crear spec** → Completar esta plantilla
+2. **Confirmación** → Esperar aprobación del usuario
+3. **Implementar Fase 1** → Seguir pasos de Fase 1
+4. **Verificar Fase 1** → Comprobar criterios de éxito
+5. **Confirmar avance** → Preguntar explícitamente si avanzar
+6. **Implementar Fase 2** → Seguir pasos de Fase 2
+7. **Verificar Fase 2** → Comprobar criterios de éxito
+8. **Confirmar avance** → Preguntar explícitamente si avanzar
+9. **Continuar fases** → Repetir hasta completar todas
+10. **Completar** → Mover a `status/done/`
+
+---
+
+## 📝 Notas de implementación por fases
+
+### **Fase 1: [Nombre]**
+- [ ] Paso 1.1 completado - Fecha: YYYY-MM-DD
+- [ ] Paso 1.2 completado - Fecha: YYYY-MM-DD
+- [ ] Paso 1.3 completado - Fecha: YYYY-MM-DD
+
+**Problemas encontrados:**
+- Problema 1.1: Descripción y solución
+- Problema 1.2: Descripción y solución
+
+**Cambios realizados vs spec original:**
+- Cambio 1.1: Justificación
+- Cambio 1.2: Justificación
+
+### **Fase 2: [Nombre]**
+- [ ] Paso 2.1 completado - Fecha: YYYY-MM-DD
+- [ ] Paso 2.2 completado - Fecha: YYYY-MM-DD
+- [ ] Paso 2.3 completado - Fecha: YYYY-MM-DD
+
+**Problemas encontrados:**
+- Problema 2.1: Descripción y solución
+- Problema 2.2: Descripción y solución
+
+**Cambios realizados vs spec original:**
+- Cambio 2.1: Justificación
+- Cambio 2.2: Justificación
+
+### **Fase 3: [Nombre]**
+- [ ] Paso 3.1 completado - Fecha: YYYY-MM-DD
+- [ ] Paso 3.2 completado - Fecha: YYYY-MM-DD
+- [ ] Paso 3.3 completado - Fecha: YYYY-MM-DD
+
+**Problemas encontrados:**
+- Problema 3.1: Descripción y solución
+- Problema 3.2: Descripción y solución
+
+**Cambios realizados vs spec original:**
+- Cambio 3.1: Justificación
+- Cambio 3.2: Justificación
